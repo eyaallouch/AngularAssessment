@@ -20,6 +20,7 @@ class _BottomBarState extends State<BottomBar> {
     HomePage(),
     WassimCVPage(),
     EyaCVPage(),
+
   ];
   final List<Color> _colors = [
     Colors.blue,
