@@ -23,9 +23,10 @@ class _BottomBarState extends State<BottomBar> {
 
   ];
   final List<Color> _colors = [
-    Colors.blue,
-    Colors.green,
-    Colors.purple,
+    Colors.black45,
+    Colors.teal.shade400,
+    Colors.yellow.shade800,
+    //Color.alphaBlend(Colors.orange,Colors.greenAccent),
   ];
   @override
   Widget build(BuildContext context) {

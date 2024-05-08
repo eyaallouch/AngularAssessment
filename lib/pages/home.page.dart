@@ -1,24 +1,57 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:my_poject_cv/bloc/theme_bloc.dart';
 import 'package:my_poject_cv/pages/wassimCV.page.dart';
 import 'package:my_poject_cv/pages/eyaCV.page.dart';
 import 'package:my_poject_cv/pages/CVComplets.page.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text("CV APPLICATION"),
+        backgroundColor: Colors.white38,
+        actions: [
+          Switch(
+            value: context.read<ThemeBloc>().state == ThemeMode.dark,
+            onChanged: (value) {
+              context.read<ThemeBloc>().add(ThemeChanged(value));
+            },
+          )
+        ],
       ),
       body: Container(
-        decoration: BoxDecoration(
-
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+           image: AssetImage("images/backg.jpg"),
+           // image: AssetImage("images/backgHome.jpg"),
+          // image: AssetImage("images/background.jpg"),
+            fit: BoxFit.cover,
+          ),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
             SizedBox(height: 20.0),
+            Center(
+              child: Text(
+                "Découvrez les profils de Wassim et Eya",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.teal,
+                ),
+              ),
+            ),
             SizedBox(height: 30.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

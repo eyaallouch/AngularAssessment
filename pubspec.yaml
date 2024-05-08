@@ -33,7 +33,20 @@ dependencies:
   scale_button: ^2.1.2
   curved_navigation_bar: ^1.0.3
   timeline_list:
-
+  social_media_buttons:
+  font_awesome_flutter:
+  url_launcher: ^6.0.12
+  flutter_animation_list:
+  animation_list:
+  flutter_rating_bar: ^4.0.1
+  auto_animated:
+  scroll_cool_widget: ^0.0.1+1
+  gallery_3d: ^1.0.13
+  bloc: ^8.1.2
+  flutter_bloc: ^8.1.3
+  google_maps_flutter: ^2.5.3
+  flutter_animate:
+  animated_list_item: ^1.0.0
 
 
 
@@ -66,8 +79,29 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+
     - images/wassim.jpg
     - images/eya.jpg
+    - images/fac_de_science.jpg
+    - images/iit.png
+    - images/lycee_megdich.jpg
+    - images/english.jpg
+    - images/data-mining.jpg
+    - images/velo.jpg
+    - images/asm.jfif
+    - images/chatbot.jpg
+    - images/uk.jpg
+    - images/france.jpg
+    - images/tunisie.jpg
+    - images/scrum.jpg
+    - images/cisco.jpg
+    - images/ipeig.jpg
+    - images/ipeis.jpg
+    - images/iit1.jpg
+    - images/cv1.jpg
+    - images/background.jpg
+    - images/backgHome.jpg
+    - images/backg.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
